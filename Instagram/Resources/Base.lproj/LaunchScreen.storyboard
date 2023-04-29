@@ -7,6 +7,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="InstagramSans-Regular.ttf">
+            <string>InstagramSans-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -23,11 +28,28 @@
                                     <constraint firstAttribute="width" constant="80" id="oS3-Qa-Kb3"/>
                                 </constraints>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meta" translatesAutoresizingMaskIntoConstraints="NO" id="Rms-NN-shh">
+                                <rect key="frame" x="146.66666666666666" y="758" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="3vB-Td-R5q"/>
+                                    <constraint firstAttribute="height" constant="30" id="G49-2l-xqU"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="from" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEh-yU-mPr">
+                                <rect key="frame" x="181.33333333333334" y="733.33333333333337" width="30.333333333333343" height="19.666666666666629"/>
+                                <fontDescription key="fontDescription" name="InstagramSans-Regular" family="Instagram Sans" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Rms-NN-shh" secondAttribute="bottom" constant="30" id="Tb0-tU-hxU"/>
+                            <constraint firstItem="Rms-NN-shh" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="fpD-Ke-edf"/>
                             <constraint firstItem="3J2-oT-07J" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="gtv-hq-Pcm"/>
+                            <constraint firstItem="Rms-NN-shh" firstAttribute="top" secondItem="WEh-yU-mPr" secondAttribute="bottom" constant="5" id="hW2-9N-zBi"/>
+                            <constraint firstItem="WEh-yU-mPr" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="xBh-oh-k7o"/>
                             <constraint firstItem="3J2-oT-07J" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="xzn-RU-VJo"/>
                         </constraints>
                     </view>
@@ -39,6 +61,7 @@
     </scenes>
     <resources>
         <image name="logo" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="meta" width="128" height="38"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
