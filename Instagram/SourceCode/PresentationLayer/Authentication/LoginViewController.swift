@@ -11,7 +11,8 @@ class LoginViewController: UIViewController {
 	
 	// MARK: - Outlets
 	
-	@IBOutlet weak var instagramLabel: UILabel!
+	@IBOutlet weak var phoneNumberUsernameEmailView: UIView!
+	@IBOutlet weak var passwordView: UIView!
 	
 	// MARK: - Override Methods
 	
@@ -27,7 +28,13 @@ extension LoginViewController {
 	
 	///Custom UI for login screen
 	fileprivate func customUI() {
-		instagramLabel.font = UIFont(name: Constant.Fonts.InstagramSansBold, size: 30.0)
+		
+		//Setting border for the container views
+		phoneNumberUsernameEmailView.setCorderRadiusPlusBorderColor(withRadius: 5.0, withBorderColor: .systemGray4, withBorderWidth: 1.0)
+		passwordView.setCorderRadiusPlusBorderColor(withRadius: 5.0, withBorderColor: .systemGray4, withBorderWidth: 1.0)
+		
+		//Hide navigation bar
+		NavigationController.sharedInstance.hideNavigationBar(for: self.navigationController)
 	}
 }
 
@@ -41,6 +48,6 @@ extension LoginViewController {
 	 - Returns: LoginViewController
 	 */
 	static func instantiateFromStoryboard() -> LoginViewController {
-		return Storyboard.Main.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+		return Storyboard.Main.instantiateViewController(withIdentifier: LoginViewController.typeName) as! LoginViewController
 	}
 }

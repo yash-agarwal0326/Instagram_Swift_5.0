@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		76FA1FE9A8C0149F4F451A75 /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A572534993F209D2788B9A /* Pods_Instagram.framework */; };
+		D30D549B29FE627B00A091C7 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30D549A29FE627B00A091C7 /* UIView.swift */; };
+		D30D549D29FE63C800A091C7 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30D549C29FE63C800A091C7 /* NSObject.swift */; };
+		D30D549F29FE67F900A091C7 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30D549E29FE67F900A091C7 /* NavigationController.swift */; };
 		D30DFD4129FD95C500DA7D27 /* InstagramSansScript-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D35DD68C29FD67DD0034962C /* InstagramSansScript-Regular.ttf */; };
 		D30FFAA129D34BC000B3497F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30FFAA029D34BC000B3497F /* AppDelegate.swift */; };
 		D30FFAA329D34BC000B3497F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30FFAA229D34BC000B3497F /* SceneDelegate.swift */; };
@@ -31,6 +34,9 @@
 /* Begin PBXFileReference section */
 		06A572534993F209D2788B9A /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A25DA5316061DC8642B3FF /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
+		D30D549A29FE627B00A091C7 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		D30D549C29FE63C800A091C7 /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
+		D30D549E29FE67F900A091C7 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		D30FFA9D29D34BC000B3497F /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D30FFAA029D34BC000B3497F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D30FFAA229D34BC000B3497F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +95,15 @@
 				06A572534993F209D2788B9A /* Pods_Instagram.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D30D549929FE626600A091C7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D30D549A29FE627B00A091C7 /* UIView.swift */,
+				D30D549C29FE63C800A091C7 /* NSObject.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		D30FFA9429D34BC000B3497F = {
@@ -178,6 +193,8 @@
 		D30FFABD29D34F6600B3497F /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				D30D549929FE626600A091C7 /* Extension */,
+				D30D549E29FE67F900A091C7 /* NavigationController.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -389,8 +406,11 @@
 				D35DD69F29FD7D720034962C /* HomeViewController.swift in Sources */,
 				D30FFAA329D34BC000B3497F /* SceneDelegate.swift in Sources */,
 				D35DD68F29FD79B40034962C /* LoginViewController.swift in Sources */,
+				D30D549F29FE67F900A091C7 /* NavigationController.swift in Sources */,
 				D3DFFEF029D5F66F007A7A53 /* SplashViewController.swift in Sources */,
+				D30D549B29FE627B00A091C7 /* UIView.swift in Sources */,
 				D35DD6A729FD7DB10034962C /* ProfileViewController.swift in Sources */,
+				D30D549D29FE63C800A091C7 /* NSObject.swift in Sources */,
 				D35DD6A529FD7DA60034962C /* ReelViewController.swift in Sources */,
 				D35DD6A329FD7D9A0034962C /* PostViewController.swift in Sources */,
 			);
