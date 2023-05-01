@@ -13,6 +13,10 @@ class LoginViewController: UIViewController {
 	
 	@IBOutlet weak var phoneNumberUsernameEmailView: UIView!
 	@IBOutlet weak var passwordView: UIView!
+	@IBOutlet weak var phoneNumberUsernameEmailTextField: UITextField!
+	@IBOutlet weak var passwordTextField: UITextField!
+	@IBOutlet weak var loginButton: UIButton!
+	
 	
 	// MARK: - Override Methods
 	
@@ -35,6 +39,8 @@ extension LoginViewController {
 		
 		//Hide navigation bar
 		NavigationController.sharedInstance.hideNavigationBar(for: self.navigationController)
+		
+		loginButton.setCorerRadius(withRadius: 5.0)
 	}
 }
 

@@ -25,4 +25,13 @@ extension UIView {
 		self.layer.borderWidth = borderWidth
 		self.layer.borderColor = borderColor.cgColor
 	}
+	
+	/**
+	 Set view corner radius
+	 
+	 - Parameter radius: Corner radius
+	 */
+	func setCorerRadius(withRadius radius: CGFloat) {
+		self.layer.cornerRadius = radius
+	}
 }
