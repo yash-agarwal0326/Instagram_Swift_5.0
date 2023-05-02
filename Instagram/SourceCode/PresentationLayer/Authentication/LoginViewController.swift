@@ -17,6 +17,16 @@ class LoginViewController: UIViewController {
 	@IBOutlet weak var passwordTextField: UITextField!
 	@IBOutlet weak var loginButton: UIButton!
 	
+	// MARK: - Actions
+	
+	@IBAction func forgotButtonPressed(_ sender: UIButton) {
+	}
+	
+	@IBAction func loginButtonPressed(_ sender: UIButton) {
+	}
+	
+	@IBAction func signUpButtonPressed(_ sender: UIButton) {
+	}
 	
 	// MARK: - Override Methods
 	
@@ -41,6 +51,20 @@ extension LoginViewController {
 		NavigationController.sharedInstance.hideNavigationBar(for: self.navigationController)
 		
 		loginButton.setCorerRadius(withRadius: 5.0)
+	}
+}
+
+// MARK: - UITextFieldDelegate
+
+extension LoginViewController: UITextFieldDelegate {
+	
+	func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+		switch textField {
+		case phoneNumberUsernameEmailTextField:
+			return passwordTextField.becomeFirstResponder()
+		default:
+			return textField.resignFirstResponder()
+		}
 	}
 }
 

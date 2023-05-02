@@ -36,6 +36,7 @@
 		D35DD6A329FD7D9A0034962C /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35DD6A229FD7D9A0034962C /* PostViewController.swift */; };
 		D35DD6A529FD7DA60034962C /* ReelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35DD6A429FD7DA60034962C /* ReelViewController.swift */; };
 		D35DD6A729FD7DB10034962C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35DD6A629FD7DB10034962C /* ProfileViewController.swift */; };
+		D3D7E4902A0182D800C4250F /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7E48F2A0182D800C4250F /* Validator.swift */; };
 		D3DFFEF029D5F66F007A7A53 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DFFEEF29D5F66F007A7A53 /* SplashViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		D35DD6A429FD7DA60034962C /* ReelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelViewController.swift; sourceTree = "<group>"; };
 		D35DD6A629FD7DB10034962C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D369AA3A29D6CBE900EDA3A0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3D7E48F2A0182D800C4250F /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		D3DFFEEF29D5F66F007A7A53 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		F6FB9A311E63BB7800C85C2D /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -203,6 +205,7 @@
 			children = (
 				D30D549929FE626600A091C7 /* Extension */,
 				D30D549E29FE67F900A091C7 /* NavigationController.swift */,
+				D3D7E48F2A0182D800C4250F /* Validator.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 				D30D549F29FE67F900A091C7 /* NavigationController.swift in Sources */,
 				D3DFFEF029D5F66F007A7A53 /* SplashViewController.swift in Sources */,
 				D30D549B29FE627B00A091C7 /* UIView.swift in Sources */,
+				D3D7E4902A0182D800C4250F /* Validator.swift in Sources */,
 				D35DD6A729FD7DB10034962C /* ProfileViewController.swift in Sources */,
 				D30D549D29FE63C800A091C7 /* NSObject.swift in Sources */,
 				D35DD6A529FD7DA60034962C /* ReelViewController.swift in Sources */,
