@@ -23,6 +23,7 @@ class LoginViewController: UIViewController {
 	}
 	
 	@IBAction func loginButtonPressed(_ sender: UIButton) {
+		navigateToCoreTabs()
 	}
 	
 	@IBAction func signUpButtonPressed(_ sender: UIButton) {
@@ -52,6 +53,36 @@ extension LoginViewController {
 		
 		loginButton.setCorerRadius(withRadius: 5.0)
 	}
+	
+	/**
+	 Check wheather all fields are valid or not
+	 
+	 - Returns: Boolean value
+	 */
+	fileprivate func isAllFieldValid() -> Bool {
+		var isValid:Bool = false
+		
+		if Validator.isTextFieldEmpty(phoneNumberUsernameEmailTextField) {
+			Utility.showMessage(Constant.Message.pleaseEnterUsernameEmailNumber)
+			
+		} else if Validator.isTextFieldEmpty(passwordTextField) {
+			Utility.showMessage(Constant.Message.pleaseEnterPassword)
+			
+		} else if !Validator.isValidPassword(passwordTextField.text) {
+			Utility.showMessage(Constant.Message.pleaseEnterValidPassword)
+			
+		} else {
+			isValid = true
+		}
+		
+		return isValid
+	}
+	
+	///Navigate to core tabs
+	fileprivate func navigateToCoreTabs() {
+		let coreTabsController = CoreTabsBarController.instantiateFromStoryboard()
+		navigationController?.pushViewController(coreTabsController, animated: true)
+	}
 }
 
 // MARK: - UITextFieldDelegate
@@ -65,6 +96,10 @@ extension LoginViewController: UITextFieldDelegate {
 		default:
 			return textField.resignFirstResponder()
 		}
+	}
+	
+	func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+		return !Validator.isFirstCharacterSpace(for: textField, replacement: string)
 	}
 }
 

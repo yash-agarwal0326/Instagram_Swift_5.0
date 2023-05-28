@@ -26,6 +26,8 @@
 		D323B08D2A002FD500163328 /* InstagramSansHeadline-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D35DD68629FD67DC0034962C /* InstagramSansHeadline-Regular.ttf */; };
 		D323B08E2A002FD800163328 /* InstagramSansScript-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D35DD68729FD67DC0034962C /* InstagramSansScript-Bold.ttf */; };
 		D323B08F2A002FDB00163328 /* InstagramSansScript-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D35DD68C29FD67DD0034962C /* InstagramSansScript-Regular.ttf */; };
+		D35BE8072A23B9930097BB82 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35BE8062A23B9930097BB82 /* Utility.swift */; };
+		D35BE8092A23C11D0097BB82 /* CoreTabsBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35BE8082A23C11D0097BB82 /* CoreTabsBarController.swift */; };
 		D35DD68F29FD79B40034962C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35DD68E29FD79B40034962C /* LoginViewController.swift */; };
 		D35DD69129FD7A400034962C /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35DD69029FD7A400034962C /* RegistrationViewController.swift */; };
 		D35DD69329FD7B030034962C /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35DD69229FD7B030034962C /* ForgotPasswordViewController.swift */; };
@@ -53,6 +55,8 @@
 		D30FFAAA29D34BC000B3497F /* Instagram.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Instagram.xcdatamodel; sourceTree = "<group>"; };
 		D30FFAAC29D34BC200B3497F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D30FFAAF29D34BC200B3497F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D35BE8062A23B9930097BB82 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		D35BE8082A23C11D0097BB82 /* CoreTabsBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreTabsBarController.swift; sourceTree = "<group>"; };
 		D35DD68529FD67DC0034962C /* InstagramSansCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "InstagramSansCondensed-Regular.ttf"; sourceTree = "<group>"; };
 		D35DD68629FD67DC0034962C /* InstagramSansHeadline-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "InstagramSansHeadline-Regular.ttf"; sourceTree = "<group>"; };
 		D35DD68729FD67DC0034962C /* InstagramSansScript-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "InstagramSansScript-Bold.ttf"; sourceTree = "<group>"; };
@@ -162,7 +166,7 @@
 				D30FFABA29D34F0400B3497F /* PresentationLayer */,
 				D30FFABB29D34F5300B3497F /* NetworkLayer */,
 				D30FFABC29D34F5E00B3497F /* Helper */,
-				D30FFABD29D34F6600B3497F /* Utility */,
+				D30FFABD29D34F6600B3497F /* Utilities */,
 			);
 			path = SourceCode;
 			sourceTree = "<group>";
@@ -200,20 +204,22 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
-		D30FFABD29D34F6600B3497F /* Utility */ = {
+		D30FFABD29D34F6600B3497F /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				D30D549929FE626600A091C7 /* Extension */,
 				D30D549E29FE67F900A091C7 /* NavigationController.swift */,
 				D3D7E48F2A0182D800C4250F /* Validator.swift */,
+				D35BE8062A23B9930097BB82 /* Utility.swift */,
 			);
-			path = Utility;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		D35DD69629FD7B980034962C /* CoreTabs */ = {
 			isa = PBXGroup;
 			children = (
 				D35DD69729FD7C080034962C /* CoreTabs.storyboard */,
+				D35BE8082A23C11D0097BB82 /* CoreTabsBarController.swift */,
 				D35DD69929FD7D250034962C /* Home */,
 				D35DD69A29FD7D300034962C /* Search */,
 				D35DD69B29FD7D380034962C /* Post */,
@@ -418,6 +424,7 @@
 			files = (
 				D35DD6A129FD7D810034962C /* SearchViewController.swift in Sources */,
 				D35DD69129FD7A400034962C /* RegistrationViewController.swift in Sources */,
+				D35BE8072A23B9930097BB82 /* Utility.swift in Sources */,
 				D35DD69329FD7B030034962C /* ForgotPasswordViewController.swift in Sources */,
 				D30FFAAB29D34BC000B3497F /* Instagram.xcdatamodeld in Sources */,
 				D35DD69529FD7B890034962C /* Constant.swift in Sources */,
@@ -427,6 +434,7 @@
 				D35DD68F29FD79B40034962C /* LoginViewController.swift in Sources */,
 				D30D549F29FE67F900A091C7 /* NavigationController.swift in Sources */,
 				D3DFFEF029D5F66F007A7A53 /* SplashViewController.swift in Sources */,
+				D35BE8092A23C11D0097BB82 /* CoreTabsBarController.swift in Sources */,
 				D30D549B29FE627B00A091C7 /* UIView.swift in Sources */,
 				D3D7E4902A0182D800C4250F /* Validator.swift in Sources */,
 				D35DD6A729FD7DB10034962C /* ProfileViewController.swift in Sources */,

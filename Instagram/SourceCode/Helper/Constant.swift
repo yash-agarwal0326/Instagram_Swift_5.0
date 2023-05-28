@@ -21,6 +21,12 @@ struct Constant {
 		static let InstagramSansScriptBold 		= "InstagramSansScript-Bold"
 		static let InstagramSansScriptRegular 	= "InstagramSansScript-Regular"
 	}
+	
+	struct Message {
+		static let pleaseEnterUsernameEmailNumber = "Please enter username, email or phone number"
+		static let pleaseEnterPassword = "Please enter password"
+		static let pleaseEnterValidPassword = "Please enter valid password"
+	}
 }
 
 struct Storyboard {
